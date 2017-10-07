@@ -2,7 +2,14 @@ import React from 'react';
 
 import Left from './Left';
 import Right from './Right';
+import {Route} from 'react-router-dom';
 
+import {Col, Row} from 'react-bootstrap';
+import albumimg1 from '../images/albums/1.jpg';
+import albumimg2 from '../images/albums/2.jpg';
+
+import Albumcoverleft from '../components/Albumcoverleft';
+import Albumcoverright from '../components/Albumcoverright';
 
 import DesktopBreakpoint from '../responsive/desktop_breakpoint.js';
 import TabletBreakpoint from '../responsive/tablet_breakpoint.js';
@@ -70,6 +77,7 @@ _handleWindowResize () {
 			left:"80px",
 			top:"50px",
 			position:"absolute",
+			zIndex:"5",
 		}
 		const tablet={
 			height:"calc(100% - 70px)",
@@ -82,6 +90,14 @@ _handleWindowResize () {
 			display:this.state.displayeither,
 		}
 
+const mobilealbum={
+	width:"100%",
+}
+
+const mobilecontainer={
+	marginTop:"20px",
+	marginBottom:"20px",
+}
 
 		return(
 			<div>
@@ -108,6 +124,31 @@ _handleWindowResize () {
 					/>
 				</div>
 			</div>
+
+			<Route exact path={"/"} children={({ match }) => (
+				<div>
+
+					<a href="https://fanlink.to/kmart">
+					<Albumcoverleft
+					opac={Boolean(match)? '1' : '0'}
+					offset={ Boolean(match) ? '0' : '100vh' }
+					hoverleft={this.hoverleft}
+					stopleft={this.stopleft}
+					/>
+					</a>
+
+					<a href="https://fanlink.to/endless">
+					<Albumcoverright
+					opac={Boolean(match)? '1' : '0'}
+					offset={ Boolean(match) ? '0' : '-100vh' }
+					hoverright={this.hoverright}
+					stopright={this.stopright}
+					/>
+					</a>
+
+				</div>
+				)}/>
+
 			</DesktopBreakpoint>
 
 			<TabletBreakpoint>
@@ -133,32 +174,51 @@ _handleWindowResize () {
 					/>
 				</div>
 			</div>
+
+			<Route exact path={"/"} children={({ match }) => (
+				<div>
+
+					<a href="https://fanlink.to/kmart">
+					<Albumcoverleft
+					opac={Boolean(match)? '1' : '0'}
+					offset={ Boolean(match) ? '0' : '100vh' }
+					hoverleft={this.hoverleft}
+					stopleft={this.stopleft}
+					/>
+					</a>
+
+					<a href="https://fanlink.to/endless">
+					<Albumcoverright
+					opac={Boolean(match)? '1' : '0'}
+					offset={ Boolean(match) ? '0' : '-100vh' }
+					hoverright={this.hoverright}
+					stopright={this.stopright}
+					/>
+					</a>
+
+				</div>
+				)}/>
+
 			</TabletBreakpoint>
 
 			<PhoneBreakpoint>
-			<div style={tablet}>
-				<div style={inner}>
-					<Left
-						margbot={this.state.rightmargbot}
-						hoverleft={this.hoverleft}
-						stopleft={this.stopleft}
-						transtime={this.state.transtime}
-						fromleft="-35px"
+			<Row>
+			<Col xs={8} xsOffset={2} style={mobilecontainer}>
+			<img src={albumimg1} style={mobilealbum}/>
+			</Col>
+			</Row>
 
-						topOffset={this.props.topOffset}
-					/>
-					<Right
-						margbot={this.state.leftmargbot}
-						hoverright={this.hoverright}
-						stopright={this.stopright}
-						transtime={this.state.transtime}
-						fromright="-35px"
+			<Row>
+			<Col xs={8} xsOffset={2} style={mobilecontainer}>
+			<img src={albumimg2} style={mobilealbum}/>
+			</Col>
+			</Row>
 
-						rightOffset={this.props.rightOffset}
-					/>
-				</div>
-			</div>
 			</PhoneBreakpoint>
+
+
+
+
 			</div>
 
 		);

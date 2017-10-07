@@ -30,11 +30,14 @@ const albumcover={
 	OTransition: ".4s ease-out",
 	transition:".4s ease-out",
 
+	marginTop:this.props.offset,
+	zIndex:"6"
+
 }
 
 
 	  return(
-			<img src={albumimg} style={albumcover}/>
+			<img src={albumimg} style={albumcover} onMouseEnter={this.props.hoverleft} onMouseLeave={this.props.stopleft}/>
 
 
 	  );

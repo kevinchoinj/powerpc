@@ -45,10 +45,6 @@ class App extends Component {
       <Route path={"/singles"} children={({ match }) => (
     		      <div>
 
-            <Panelleft
-                  offset={ Boolean(match) ? '0': '-100%'}
-                  transtime={this.state.transtime}
-                  />
 
     		      </div>
     		)}/>
@@ -56,10 +52,7 @@ class App extends Component {
             <Route path={"/soundcloud"} children={({ match }) => (
         <div>
 
-          <Panelright
-            offset={ Boolean(match) ? '0': '-100%'}
-            transtime={this.state.transtime}
-            />
+          
         </div>
       )}/>
 

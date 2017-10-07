@@ -28,7 +28,7 @@ const panelstyle={
 	width:"100vw",
 	top:"50px",
 	height:"calc(100vh - 50px)",
-	backgroundColor:"#ddd",
+	backgroundColor:"#f5f5f5",
 	zIndex:"2",
 
 }
@@ -40,17 +40,14 @@ const panelstyle={
 			<Route exact path={"/"} children={({ match }) => (
 		<div>
 
+
+
 			<Full
 				topOffset={ Boolean(match) ? '0' : '-100vh' }
 				rightOffset={ Boolean(match) ? '0': '-100vw'}
 			/>
 
-			<Albumcoverleft
-			opac={Boolean(match)? '1' : '0'}
-			/>
-			<Albumcoverright
-			opac={Boolean(match)? '1' : '0'}
-			/>
+
 
 		</div>
 	)}/>

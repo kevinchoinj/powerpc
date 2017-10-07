@@ -24,7 +24,7 @@ const panelstyle={
 	top:"50px",
 	height:"calc(100vh - 50px)",
 	left:this.props.offset,
-	backgroundColor:"#141415",
+	backgroundColor:"#f5f5f5",
 	WebkitTransition: this.props.transtime,
 	MozTransition: this.props.transtime,
 	OTransition: this.props.transtime,
