@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 
 import {Row, Col} from 'react-bootstrap';
 
+import logoimage from '../images/logo.jpg';
+
 export default class Panelleft extends React.Component{
 	constructor(props) {
 	 super(props);
@@ -33,23 +35,40 @@ const panelstyle={
 	zIndex:"4",
 
 }
-
-const option={
+const logooption={
 	textAlign:"center",
 }
+const option={
+	textAlign:"center",
+	textDecoration:"none",
+	fontFamily:"helvetica",
+	Color:"#000",
+	fontSize:"12px",
+	letterSpacing:"5px",
 
+	marginTop:"15px",
+
+}
+
+const logostyle={
+	height:"50px",
+	verticalAlign:"top",
+}
+const linkstyle={
+	color:"#000",
+}
 
 	  return(
 			<div style={panelstyle}>
 			<Row>
 				<Col md={4} sm={4} xs={4} style={option}>
-				<Link to='Singles'>Singles</Link>
+				<Link to='/singles' style={linkstyle}>SINGLES</Link>
+				</Col>
+				<Col md={4} sm={4} xs={4} style={logooption}>
+				<Link to='/'><img src={logoimage} alt="PowerPCME" style={logostyle}/></Link>
 				</Col>
 				<Col md={4} sm={4} xs={4} style={option}>
-				<Link to='/'>PowerPCME</Link>
-				</Col>
-				<Col md={4} sm={4} xs={4} style={option}>
-				<Link to='/soundcloud'>Soundcloud</Link>
+				<Link to='/soundcloud' style={linkstyle}>SOUNDCLOUD</Link>
 				</Col>
 			</Row>
 			</div>

@@ -28,8 +28,8 @@ const panelstyle={
 	width:"100vw",
 	top:"50px",
 	height:"calc(100vh - 50px)",
-	backgroundColor:"#f5f5f5",
 	zIndex:"2",
+
 
 }
 
@@ -45,6 +45,8 @@ const panelstyle={
 			<Full
 				topOffset={ Boolean(match) ? '0' : '-100vh' }
 				rightOffset={ Boolean(match) ? '0': '-100vw'}
+
+				mobileopac = {Boolean(match) ? '1': '0'}
 			/>
 
 
