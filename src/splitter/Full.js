@@ -75,7 +75,7 @@ _handleWindowResize () {
 			height:"calc(100% - 160px)",
 			width: "calc(100% - 160px)",
 			left:"80px",
-			top:"50px",
+			top:"75px",
 			position:"absolute",
 			zIndex:"5",
 			pointerEvents:"none",
@@ -105,6 +105,11 @@ const mobilecontainer={
 	transition:this.state.transtime,
 }
 
+const mobilewrapper={
+	marginTop:"50px",
+	position:"absolute",
+}
+
 		return(
 			<div>
 			<DesktopBreakpoint>
@@ -112,8 +117,6 @@ const mobilecontainer={
 				<div style={inner}>
 					<Left
 						margbot={this.state.rightmargbot}
-						hoverleft={this.hoverleft}
-						stopleft={this.stopleft}
 						transtime={this.state.transtime}
 
 						topOffset={this.props.topOffset}
@@ -121,8 +124,6 @@ const mobilecontainer={
 					/>
 					<Right
 						margbot={this.state.leftmargbot}
-						hoverright={this.hoverright}
-						stopright={this.stopright}
 						transtime={this.state.transtime}
 
 						rightOffset={this.props.rightOffset}
@@ -162,8 +163,6 @@ const mobilecontainer={
 				<div style={inner}>
 					<Left
 						margbot={this.state.rightmargbot}
-						hoverleft={this.hoverleft}
-						stopleft={this.stopleft}
 						transtime={this.state.transtime}
 						fromleft="-35px"
 
@@ -171,8 +170,6 @@ const mobilecontainer={
 					/>
 					<Right
 						margbot={this.state.leftmargbot}
-						hoverright={this.hoverright}
-						stopright={this.stopright}
 						transtime={this.state.transtime}
 						fromright="-35px"
 
@@ -208,6 +205,7 @@ const mobilecontainer={
 			</TabletBreakpoint>
 
 			<PhoneBreakpoint>
+			<div style={mobilewrapper}>
 			<Row>
 			<Col xs={8} xsOffset={2} style={mobilecontainer}>
 			<a href="https://fanlink.to/kmart">
@@ -223,6 +221,7 @@ const mobilecontainer={
 			</a>
 			</Col>
 			</Row>
+			</div>
 
 			</PhoneBreakpoint>
 

@@ -47,6 +47,7 @@ const option={
 	letterSpacing:"3px",
 
 	marginTop:"15px",
+	fontWeight:"bold",
 
 }
 

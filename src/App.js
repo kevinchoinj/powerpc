@@ -6,6 +6,8 @@ import Home from './components/Home';
 import Soundcloud from './components/Soundcloud';
 import Singles from './components/Singles';
 
+import Socials from './components/Socials';
+
 import Menu from './components/Menu';
 class App extends Component {
 
@@ -33,25 +35,28 @@ class App extends Component {
 
 
   render() {
-    const wrapper={
-      height:"100vh",
-      width:"100vw",
-      overflow:"hidden",
-    }
+
     return (
-      <div style={wrapper} className="App">
+      <div  className="App">
 
       <Menu/>
 
 
       <Home/>
 
+      <Route path={"/singles"} children={({ match }) => (
 
+
+              <Singles offset={ Boolean(match) ? '0' : '100vw' }/>
+
+    		)}/>
 
         <Route path={"/soundcloud"} children={({ match }) => (
 
 
-                  <Soundcloud opac={ Boolean(match) ? '1' : '0' }/>
+                  <Soundcloud opac={ Boolean(match) ? '1' : '0' }
+                  pointerevents={ Boolean(match) ? 'auto' : 'none' }
+                  />
 
           )}/>
 
@@ -59,6 +64,15 @@ class App extends Component {
 
       <Switch>
       </Switch>
+
+      <Route path={"/singles"} children={({ match }) => (
+
+
+        <Socials
+        offset={ Boolean(match) ? 'calc(100vh - 75px)' : '25px' }
+        />
+
+    		)}/>
 
       </div>
     );

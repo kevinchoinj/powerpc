@@ -16,6 +16,7 @@ const soundcloudcontainer={
 		opacity: this.props.opac,
 		left:"25%",
 		width:"50%",
+		pointerEvents:this.props.pointerevents
 
 }
 

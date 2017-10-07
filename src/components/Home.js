@@ -2,7 +2,6 @@ import React from "react";
 import {Route} from 'react-router-dom';
 
 
-import Socials from './Socials';
 import Full from '../splitter/Full';
 export default class Panelleft extends React.Component{
 	constructor(props) {
@@ -12,28 +11,12 @@ export default class Panelleft extends React.Component{
 
 	}
 
-
-myFunction(){
-
-}
-
-
-
   render(){
 
-const panelstyle={
-	position:"absolute",
-	width:"100vw",
-	top:"50px",
-	height:"calc(100vh - 50px)",
-	zIndex:"2",
-
-
-}
 
 
 	  return(
-			<div style={panelstyle}>
+			<div >
 
 			<Route exact path={"/"} children={({ match }) => (
 		<div>
@@ -52,7 +35,6 @@ const panelstyle={
 		</div>
 	)}/>
 
-			<Socials/>
 			</div>
 
 
