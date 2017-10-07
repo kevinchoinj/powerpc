@@ -23,7 +23,7 @@ myFunction(){
 const panelstyle={
 	position:"fixed",
 	width:"100vw",
-	height:"75px",
+	height:"50px",
 	top:"0px",
 	backgroundColor:"#fff",
 	WebkitTransition: ".4s ease-out",
@@ -46,7 +46,7 @@ const option={
 				<Link to='Singles'>Singles</Link>
 				</Col>
 				<Col md={4} style={option}>
-				<Link to='/'>Home</Link>
+				<Link to='/'>PowerPCME</Link>
 				</Col>
 				<Col md={4} style={option}>
 				<Link to='/soundcloud'>Soundcloud</Link>

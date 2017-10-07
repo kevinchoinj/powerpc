@@ -21,7 +21,8 @@ myFunction(){
 const panelstyle={
 	position:"absolute",
 	width:"100vw",
-	height:"100vh",
+	top:"50px",
+	height:"calc(100vh - 50px)",
 	right:this.props.offset,
 		backgroundColor:"#000",
 	WebkitTransition: ".4s ease-out",
