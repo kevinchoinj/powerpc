@@ -28,7 +28,7 @@ myFunction(){
 
 const socials={
 	position:"absolute",
-	bottom:"50px",
+	bottom:"25px",
 	left:"0",
 	right:"0",
 	marginLeft:"auto",

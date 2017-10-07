@@ -25,10 +25,10 @@ const panelstyle={
 	height:"calc(100vh - 50px)",
 	right:this.props.offset,
 		backgroundColor:"#000",
-	WebkitTransition: ".4s ease-out",
-	MozTransition: ".4s ease-out",
-	OTransition: ".4s ease-out",
-	transition:".4s ease-out",
+	WebkitTransition: this.props.transtime,
+	MozTransition: this.props.transtime,
+	OTransition: this.props.transtime,
+	transition:this.props.transtime,
 	zIndex:"3",
 
 }

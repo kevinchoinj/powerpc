@@ -42,13 +42,13 @@ const option={
 	  return(
 			<div style={panelstyle}>
 			<Row>
-				<Col md={4} style={option}>
+				<Col md={4} sm={4} xs={4} style={option}>
 				<Link to='Singles'>Singles</Link>
 				</Col>
-				<Col md={4} style={option}>
+				<Col md={4} sm={4} xs={4} style={option}>
 				<Link to='/'>PowerPCME</Link>
 				</Col>
-				<Col md={4} style={option}>
+				<Col md={4} sm={4} xs={4} style={option}>
 				<Link to='/soundcloud'>Soundcloud</Link>
 				</Col>
 			</Row>

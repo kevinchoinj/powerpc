@@ -1,8 +1,11 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import {Link, Route} from 'react-router-dom';
+
+import Albumcoverleft from './Albumcoverleft';
+import Albumcoverright from './Albumcoverright';
 
 import Socials from './Socials';
-
+import Full from '../splitter/Full';
 export default class Panelleft extends React.Component{
 	constructor(props) {
 	 super(props);
@@ -26,10 +29,6 @@ const panelstyle={
 	top:"50px",
 	height:"calc(100vh - 50px)",
 	backgroundColor:"#ddd",
-	WebkitTransition: ".4s ease-out",
-	MozTransition: ".4s ease-out",
-	OTransition: ".4s ease-out",
-	transition:".4s ease-out",
 	zIndex:"2",
 
 }
@@ -37,6 +36,25 @@ const panelstyle={
 
 	  return(
 			<div style={panelstyle}>
+
+			<Route exact path={"/"} children={({ match }) => (
+		<div>
+
+			<Full
+				topOffset={ Boolean(match) ? '0' : '-100vh' }
+				rightOffset={ Boolean(match) ? '0': '-100vw'}
+			/>
+
+			<Albumcoverleft
+			opac={Boolean(match)? '1' : '0'}
+			/>
+			<Albumcoverright
+			opac={Boolean(match)? '1' : '0'}
+			/>
+
+		</div>
+	)}/>
+
 			<Socials/>
 			</div>
 
