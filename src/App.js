@@ -65,7 +65,13 @@ class App extends Component {
       <Switch>
       </Switch>
 
+      <Route path={"/singles"} children={({ match }) => (
 
+
+        <Socials
+        />
+
+    		)}/>
 
       </div>
     );
