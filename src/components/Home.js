@@ -1,8 +1,6 @@
 import React from "react";
-import {Link, Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 
-import Albumcoverleft from './Albumcoverleft';
-import Albumcoverright from './Albumcoverright';
 
 import Socials from './Socials';
 import Full from '../splitter/Full';

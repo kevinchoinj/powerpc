@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from 'react-router-dom';
 import albumimg from '../images/albums/1.jpg';
 
 export default class Albumcoverright extends React.Component{

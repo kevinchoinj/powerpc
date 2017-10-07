@@ -209,13 +209,17 @@ const mobilecontainer={
 			<PhoneBreakpoint>
 			<Row>
 			<Col xs={8} xsOffset={2} style={mobilecontainer}>
+			<a href="https://fanlink.to/kmart">
 			<img src={albumimg1} style={mobilealbum}/>
+			</a>
 			</Col>
 			</Row>
 
 			<Row>
 			<Col xs={8} xsOffset={2} style={mobilecontainer}>
+			<a href="https://fanlink.to/kmart">
 			<img src={albumimg2} style={mobilealbum}/>
+			</a>
 			</Col>
 			</Row>
 

@@ -44,14 +44,15 @@ const option={
 	fontFamily:"helvetica",
 	Color:"#000",
 	fontSize:"12px",
-	letterSpacing:"5px",
+	letterSpacing:"3px",
 
 	marginTop:"15px",
 
 }
 
 const logostyle={
-	height:"50px",
+	width:"100%",
+	maxHeight:"50px",
 	verticalAlign:"top",
 }
 const linkstyle={

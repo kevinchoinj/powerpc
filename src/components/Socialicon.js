@@ -1,7 +1,4 @@
 import React from "react";
-import {Link} from 'react-router-dom';
-
-import {Row, Col} from 'react-bootstrap';
 
 
 export default class Panelleft extends React.Component{

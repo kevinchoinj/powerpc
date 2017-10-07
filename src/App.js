@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Route, Switch} from 'react-router-dom';
 
-import Panelleft from './components/Panelleft';
-import Panelright from './components/Panelright';
 import Home from './components/Home';
 import Soundcloud from './components/Soundcloud';
 
