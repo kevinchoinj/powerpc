@@ -38,7 +38,7 @@ class App extends Component {
       <Menu/>
 
 
-
+      <Home/>
 
       <Route path={"/singles"} children={({ match }) => (
     		      <div>
@@ -47,15 +47,18 @@ class App extends Component {
     		      </div>
     		)}/>
 
-            <Route path={"/soundcloud"} children={({ match }) => (
-        <div>
-        
+        <Route path={"/soundcloud"} children={({ match }) => (
+                <div>
 
-        </div>
-      )}/>
+                  <Soundcloud opac={ Boolean(match) ? '1' : '0' }/>
+
+                </div>
+          )}/>
+
+
+
 
       <Switch>
-      <Route path="/" component={Home}/>
       </Switch>
 
       </div>

@@ -78,6 +78,7 @@ _handleWindowResize () {
 			top:"50px",
 			position:"absolute",
 			zIndex:"5",
+			pointerEvents:"none",
 		}
 		const tablet={
 			height:"calc(100% - 70px)",
