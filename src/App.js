@@ -68,9 +68,6 @@ class App extends Component {
       <Route path={"/singles"} children={({ match }) => (
 
 
-        <Socials
-        offset={ Boolean(match) ? 'calc(100vh - 75px)' : '25px' }
-        />
 
     		)}/>
 

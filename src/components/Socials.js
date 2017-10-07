@@ -43,7 +43,7 @@ const socials={
 
 const socialsmobile={
 	position:"absolute",
-	bottom:this.props.offset,
+	top:"100px",
 	left:"0",
 	right:"0",
 	marginLeft:"auto",

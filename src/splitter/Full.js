@@ -96,7 +96,7 @@ const mobilealbum={
 }
 
 const mobilecontainer={
-	marginTop:"20px",
+	marginTop:"100px",
 	marginBottom:"20px",
 	opacity: this.props.mobileopac,
 	WebkitTransition: this.state.transtime,
