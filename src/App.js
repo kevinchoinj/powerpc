@@ -7,10 +7,13 @@ import Panelleft from './components/Panelleft';
 import Panelright from './components/Panelright';
 import Home from './components/Home';
 
+import Menu from './components/Menu';
 class App extends Component {
   render() {
     return (
       <div className="App">
+
+      <Menu/>
       <Route path={"/singles"} children={({ match }) => (
     		      <div>
 

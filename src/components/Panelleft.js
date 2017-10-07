@@ -35,8 +35,6 @@ const panelstyle={
 
 	  return(
 			<div style={panelstyle}>
-			<Link to='/'>Home</Link><br/>
-			<Link to='/soundcloud'>Soundcloud</Link>
 			</div>
 
 

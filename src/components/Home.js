@@ -34,8 +34,6 @@ const panelstyle={
 
 	  return(
 			<div style={panelstyle}>
-				<Link to='/singles'>Singles</Link><br/>
-				<Link to='/soundcloud'>Soundcloud</Link>
 			</div>
 
 
