@@ -4,7 +4,7 @@ import {Route, Switch} from 'react-router-dom';
 
 import Home from './components/Home';
 import Soundcloud from './components/Soundcloud';
-
+import Singles from './components/Singles';
 
 import Menu from './components/Menu';
 class App extends Component {
@@ -31,30 +31,29 @@ class App extends Component {
  }
 
 
+
   render() {
+    const wrapper={
+      height:"100vh",
+      width:"100vw",
+      overflow:"hidden",
+    }
     return (
-      <div className="App">
+      <div style={wrapper} className="App">
 
       <Menu/>
 
 
       <Home/>
 
-      <Route path={"/singles"} children={({ match }) => (
-    		      <div>
 
-
-    		      </div>
-    		)}/>
 
         <Route path={"/soundcloud"} children={({ match }) => (
-                <div>
+
 
                   <Soundcloud opac={ Boolean(match) ? '1' : '0' }/>
 
-                </div>
           )}/>
-
 
 
 
