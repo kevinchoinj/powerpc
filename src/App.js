@@ -49,7 +49,7 @@ class App extends Component {
 
             <Route path={"/soundcloud"} children={({ match }) => (
         <div>
-          <Soundcloud offset={ Boolean(match) ? '25%' : '-200vw' }/>
+        
 
         </div>
       )}/>

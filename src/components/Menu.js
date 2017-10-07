@@ -51,7 +51,7 @@ const option={
 }
 
 const logostyle={
-	width:"100%",
+	maxWidth:"100%",
 	maxHeight:"50px",
 	verticalAlign:"top",
 }
